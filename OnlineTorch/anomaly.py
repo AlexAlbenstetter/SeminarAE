@@ -42,9 +42,9 @@ class TorchAE(base.AnomalyDetector):
 
     def _score_one(self, x: dict) -> float:
         self.net.eval()
-        with torch.inference_mode():
-            x_pred = self.net(x)
-            loss = self.loss(x_pred, x)
+        #with torch.inference_mode():
+        x_pred = self.net(x)
+        loss = self.loss(x_pred, x)
         return loss
 
     def _learn_one(self, x: torch.Tensor):
