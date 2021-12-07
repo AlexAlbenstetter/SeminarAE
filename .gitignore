@@ -3,3 +3,5 @@ OnlineTorch/__pycache__
 .ipynb_checkpoints
 data
 __pycache__
+.gitignore
+../../.*
