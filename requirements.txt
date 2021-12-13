@@ -23,7 +23,7 @@ Pygments==2.10.0
 python-dateutil==2.8.2
 pytz==2021.3
 pyzmq==22.3.0
-river==0.9.0
+river==0.8.0
 scipy==1.7.1
 six==1.16.0
 toml==0.10.2
