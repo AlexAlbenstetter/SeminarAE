@@ -16,7 +16,7 @@ class TorchAE(base.AnomalyDetector):
             optimizer_fn: Type[torch.optim.Optimizer],
             learning_rate=1e-3,
             seed=42,
-            device='cuda',
+            device='cpu',
             **net_params):
         self.build_fn = build_fn
         self.loss_fn = loss_fn
