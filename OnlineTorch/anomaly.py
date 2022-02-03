@@ -1,6 +1,7 @@
 from typing import Type
 
 from river import base
+from river import anomaly
 import torch
 import inspect
 import numpy as np
@@ -8,7 +9,7 @@ import numpy as np
 from torch._C import device
 
 
-class TorchAE(base.AnomalyDetector):
+class TorchAE(anomaly.AnomalyDetector):
     def __init__(
             self,
             build_fn,
@@ -95,7 +96,7 @@ class TorchAE(base.AnomalyDetector):
             self.net.parameters(), lr=self.learning_rate)
 
 
-class SklearnAnomalyDetector(base.AnomalyDetector):
+class SklearnAnomalyDetector(anomaly.AnomalyDetector):
     def __init__(self, build_fn) -> None:
         super().__init__()
         self.model = None
