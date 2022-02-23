@@ -1,0 +1,6 @@
+,model,anom_percentage,num_samples,Loss,Optimizer,Batch_size,Learning_rate,Latent_dim,ROC,Precision_Recall_Curve,FP,TP,FN,TN
+0,undercomplete_ae_model,0.1,10000,<class 'torch.nn.modules.loss.L1Loss'>,<class 'torch.optim.adamw.AdamW'>,10,0.001,1,ROCAUC: 0.93994,,,,,
+1,undercomplete_ae_model,0.1,10000,<class 'torch.nn.modules.loss.L1Loss'>,<class 'torch.optim.adamw.AdamW'>,10,0.001,1,ROCAUC: 0.948248,,,,,
+2,undercomplete_ae_model,0.1,10000,<class 'torch.nn.modules.loss.L1Loss'>,<class 'torch.optim.adamw.AdamW'>,10,0.001,1,ROCAUC: 0.93974,,,,,
+3,undercomplete_ae_model,0.1,10000,<class 'torch.nn.modules.loss.L1Loss'>,<class 'torch.optim.adamw.AdamW'>,10,0.001,1,ROCAUC: 0.947247,,,,,
+4,HalfSpaceTrees_min_max_scaler,0.1,10000,<class 'torch.nn.modules.loss.L1Loss'>,<class 'torch.optim.adamw.AdamW'>,10,0.001,1,ROCAUC: 0.86502,,,,,

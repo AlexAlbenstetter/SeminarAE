@@ -4,7 +4,7 @@ import typing
 import torch
 from river import base
 
-from IncrementalDL.OnlineTorch.base import PyTorch2RiverBase, RollingPyTorch2RiverBase
+from OnlineTorch.base import PyTorch2RiverBase, RollingPyTorch2RiverBase
 
 class PyTorch2RiverClassifier(PyTorch2RiverBase, base.Classifier):
 
